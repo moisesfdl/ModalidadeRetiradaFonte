@@ -34,14 +34,20 @@ void ModFontPag(){
 		//ResultNegocio = (ModalidadeDestino);
 		cout<<"\n|------------------------------------------|\n";
 		printf("| Bank : ");
-		cin>>Bank;
+		cin>>Bank>>setprecision(25);
 		scanf("\procurando...[Bank]");
+		printf("| Modalidade Origem : ");
+		cin>>ModalidadeOrigem>>setprecision(25);
 		printf("| Data : ");
-		cin>>Data;
+		cin>>Data>>setprecision(8);
 		printf("| Hora : ");
-		cin>>Hora;
+		cin>>Hora>>setprecision(8);
 		printf("| Moeda : ");
-		cin>>Moeda;
+		cin>>Moeda>>setprecision(7);
+		printf("| Volume : ");
+		cin>>Volume>>setprecision(5);
+		printf("| Modalidade Destino : ");
+		cin>>ModalidadeDestino>>setprecision(25);
 		system("PAUSE");
 		
 		ContaBancaria();
